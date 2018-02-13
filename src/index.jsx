@@ -149,6 +149,7 @@ class Switch extends Component {
       height,
       width,
       id,
+      field,
       "aria-labelledby": ariaLabelledby,
       "aria-label": ariaLabel
     } = this.props;
@@ -278,6 +279,7 @@ class Switch extends Component {
           onBlur={() => this.setState({ hasOutline: false })}
           style={handleStyle}
           id={id}
+          field={field}
           aria-checked={checked}
           aria-disabled={disabled}
           aria-labelledby={ariaLabelledby}
@@ -305,6 +307,7 @@ Switch.propTypes = {
   width: PropTypes.number,
   className: PropTypes.string,
   id: PropTypes.string,
+  field: PropTypes.string,
   "aria-labelledby": PropTypes.string,
   "aria-label": PropTypes.string
 };
